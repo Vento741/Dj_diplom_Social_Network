@@ -158,7 +158,7 @@ Authorization: Bearer Token
 
 ## Создание поста с геоданными:
 
-### Отправьте POST-запрос на /api/posts/ с полями text, location_name и при необходимости images.
+### Отправьте POST-запрос на /api/posts/ с полями text, location_name и images.
 
 Пример тела запроса:
 
@@ -166,6 +166,6 @@ Authorization: Bearer Token
 {
   "text": "Посещение нового места",
   "location_name": "Эйфелева башня, Париж",
-  "images": [1, 2]  // ID изображений, если применимо
+  "images": [1, 2]  // ID изображений
 }
 ```
