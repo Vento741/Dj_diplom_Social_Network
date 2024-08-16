@@ -128,8 +128,9 @@ URL: http://127.0.0.1:8000/api/posts/
 Method: POST
 Authorization: Bearer Token
 Body: form-data
-text (string)
-image (file)
+author: 1,
+text: Привет Мир
+images: (file)
 ```
 
 ```bash
@@ -146,7 +147,10 @@ URL: http://127.0.0.1:8000/api/posts/{post_id}/comments/
 Method: POST
 Authorization: Bearer Token
 Body: raw JSON
-text (string)
+{
+"author": 1,
+"text": "И тебе привет"
+}
 ```
 ```bash
 Постановка лайка
@@ -164,6 +168,7 @@ Authorization: Bearer Token
 
 ```python
 {
+  "author": 1,
   "text": "Посещение нового места",
   "location_name": "Эйфелева башня, Париж",
   "images": [1, 2]  // ID изображений
